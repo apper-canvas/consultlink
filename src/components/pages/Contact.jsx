@@ -1,11 +1,119 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import { toast } from 'react-toastify'
-import Input from '@/components/atoms/Input'
-import Select from '@/components/atoms/Select'
-import TextArea from '@/components/atoms/TextArea'
-import Button from '@/components/atoms/Button'
-import ApperIcon from '@/components/ApperIcon'
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { toast } from "react-toastify";
+import ApperIcon from "@/components/ApperIcon";
+import Select from "@/components/atoms/Select";
+import TextArea from "@/components/atoms/TextArea";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
+
+const NewsletterModal = ({ isOpen, onClose, onSubscribe }) => {
+  const [email, setEmail] = useState('')
+  const [subscribing, setSubscribing] = useState(false)
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault()
+    
+    if (!email.trim()) {
+      toast.error('Please enter your email address')
+      return
+    }
+    
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      toast.error('Please enter a valid email address')
+      return
+    }
+
+    try {
+      setSubscribing(true)
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000))
+      
+      toast.success('Successfully subscribed to our newsletter!')
+      setEmail('')
+      onSubscribe(email)
+      onClose()
+    } catch (err) {
+      toast.error('Failed to subscribe. Please try again.')
+    } finally {
+      setSubscribing(false)
+    }
+  }
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={onClose}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+            transition={{ duration: 0.2 }}
+            className="bg-white rounded-xl p-8 max-w-md w-full shadow-2xl relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <ApperIcon name="X" size={20} />
+            </button>
+
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <ApperIcon name="Mail" className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-navy-800 mb-2">Stay Connected!</h3>
+              <p className="text-gray-600">
+                Get exclusive insights, industry trends, and business growth tips delivered straight to your inbox.
+              </p>
+            </div>
+
+            <form onSubmit={handleSubscribe} className="space-y-4">
+              <Input
+                type="email"
+                label="Email Address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email address"
+                required
+              />
+              
+              <Button
+                type="submit"
+                variant="primary"
+                size="lg"
+                disabled={subscribing}
+                className="w-full"
+              >
+                {subscribing ? 'Subscribing...' : 'Subscribe to Newsletter'}
+              </Button>
+            </form>
+
+            <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+              <div className="flex items-start">
+                <ApperIcon name="Shield" className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-navy-800 text-sm mb-1">Privacy Guaranteed</h4>
+                  <p className="text-gray-600 text-xs">
+                    We respect your privacy. Your email will never be shared, sold, or used for spam. 
+                    You can unsubscribe at any time with one click.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  )
+}
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,9 +124,9 @@ const Contact = () => {
     message: ''
   })
   
-  const [errors, setErrors] = useState({})
+const [errors, setErrors] = useState({})
   const [submitting, setSubmitting] = useState(false)
-
+  const [showNewsletterModal, setShowNewsletterModal] = useState(false)
   const inquiryTypes = [
     { value: 'consultation', label: 'General Consultation' },
     { value: 'partnership', label: 'Partnership Opportunity' },
@@ -50,7 +158,7 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0
   }
 
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault()
     
     if (!validateForm()) return
@@ -70,11 +178,21 @@ const Contact = () => {
         inquiryType: '',
         message: ''
       })
+      
+      // Show newsletter modal after successful submission
+      setTimeout(() => {
+        setShowNewsletterModal(true)
+      }, 1500)
     } catch (err) {
       toast.error('Failed to send message. Please try again.')
     } finally {
       setSubmitting(false)
     }
+  }
+
+  const handleNewsletterSubscribe = (email) => {
+    // Newsletter subscription logic handled in modal
+    console.log('Newsletter subscription:', email)
   }
 
   return (
@@ -155,7 +273,7 @@ const Contact = () => {
                   error={errors.message}
                 />
 
-                <Button
+<Button
                   type="submit"
                   variant="primary"
                   size="lg"
@@ -175,7 +293,7 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="space-y-8"
           >
-            {/* Office Information */}
+            {/* Contact Info */}
             <div className="card p-8">
               <h3 className="text-2xl font-bold text-navy-800 mb-6">Our Office</h3>
               <div className="space-y-6">
@@ -261,6 +379,17 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
+    </div>
+  )
+</motion.div>
+        </div>
+      </div>
+      
+      <NewsletterModal
+        isOpen={showNewsletterModal}
+        onClose={() => setShowNewsletterModal(false)}
+        onSubscribe={handleNewsletterSubscribe}
+      />
     </div>
   )
 }
