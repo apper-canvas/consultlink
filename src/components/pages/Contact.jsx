@@ -271,9 +271,9 @@ const handleSubmit = async (e) => {
                   rows={5}
                   required
                   error={errors.message}
-                />
+/>
 
-<Button
+                <Button
                   type="submit"
                   variant="primary"
                   size="lg"
@@ -375,16 +375,12 @@ const handleSubmit = async (e) => {
                   <ApperIcon name="Facebook" className="w-6 h-6" />
                 </a>
               </div>
-            </div>
+</div>
           </motion.div>
         </div>
       </div>
-    </div>
-  )
-</motion.div>
-        </div>
-      </div>
-      
+
+      {/* Newsletter Modal */}
       <NewsletterModal
         isOpen={showNewsletterModal}
         onClose={() => setShowNewsletterModal(false)}
