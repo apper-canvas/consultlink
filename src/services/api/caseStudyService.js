@@ -14,9 +14,20 @@ export const getCaseStudyById = async (id) => {
   if (!caseStudy) {
     throw new Error('Case study not found')
   }
-  return { ...caseStudy }
+return { ...caseStudy }
 }
 
+export const getTestimonials = async () => {
+  await delay(200)
+  return mockCaseStudies.map(cs => ({
+    Id: cs.Id,
+    client: cs.client,
+    testimonial: cs.testimonial,
+    rating: cs.rating,
+    logoUrl: cs.logoUrl,
+    results: cs.results.slice(0, 2) // Show top 2 results
+  }))
+}
 export const createCaseStudy = async (caseStudyData) => {
   await delay(500)
   const newCaseStudy = {

@@ -73,3 +73,25 @@
 .Toastify__progress-bar {
   background: rgba(255, 255, 255, 0.7);
 }
+
+/* Testimonial Slider Styles */
+.testimonial-dot {
+  @apply w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 hover:bg-gray-400;
+}
+
+.testimonial-dot-active {
+  @apply bg-gold-500 w-8 transform scale-110;
+}
+
+.testimonial-dot:hover {
+  @apply transform scale-110;
+}
+
+/* Star Rating Animations */
+.star-rating {
+  @apply transition-all duration-200;
+}
+
+.star-rating:hover {
+  @apply transform scale-105;
+}

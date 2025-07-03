@@ -10,8 +10,10 @@
       "60% reduction in processing errors",
       "25% cost savings in operations",
       "50% faster project delivery times"
-    ],
+],
     "testimonial": "Consult Pro transformed our operations completely. The efficiency gains have been remarkable, and we're now ready for the growth we've been planning.",
+    "rating": 4.9,
+    "logoUrl": "/images/logo-techcorp.png",
     "imageUrl": "/images/case-study-1.jpg"
   },
   {
@@ -25,8 +27,10 @@
       "45% improvement in product development speed",
       "35% increase in customer satisfaction",
       "$2M additional revenue in first year"
-    ],
+],
     "testimonial": "The digital transformation strategy helped us not just survive but thrive in a competitive market. We're now leading innovation in our industry.",
+    "rating": 5.0,
+    "logoUrl": "/images/logo-globalmanufacturing.png",
     "imageUrl": "/images/case-study-2.jpg"
   },
   {
@@ -40,8 +44,10 @@
       "30% decrease in administrative costs",
       "95% compliance score improvement",
       "20% increase in patient satisfaction"
-    ],
+],
     "testimonial": "Our patient care has improved dramatically, and we're now fully compliant while operating more efficiently than ever before.",
+    "rating": 4.8,
+    "logoUrl": "/images/logo-healthfirst.png",
     "imageUrl": "/images/case-study-3.jpg"
   },
   {
@@ -55,8 +61,10 @@
       "40% improvement in inventory turnover",
       "25% increase in customer retention",
       "55% growth in cross-channel sales"
-    ],
+],
     "testimonial": "The omnichannel approach has revolutionized our business. We're now competing effectively in the digital age while strengthening our physical presence.",
+    "rating": 4.9,
+    "logoUrl": "/images/logo-retailmax.png",
     "imageUrl": "/images/case-study-4.jpg"
   },
   {
@@ -70,8 +78,10 @@
       "45% reduction in operational costs",
       "35% increase in customer acquisition",
       "99.9% security compliance rate"
-    ],
+],
     "testimonial": "We successfully modernized our services while maintaining the highest security standards. Our customers love the new digital experience.",
+    "rating": 5.0,
+    "logoUrl": "/images/logo-financialservices.png",
     "imageUrl": "/images/case-study-5.jpg"
   },
   {
@@ -85,8 +95,10 @@
       "35% increase in student engagement",
       "50% improvement in learning outcomes",
       "70% increase in parent satisfaction"
-    ],
+],
     "testimonial": "The digital transformation not only helped us through the crisis but actually improved our educational outcomes beyond what we achieved before.",
+    "rating": 4.9,
+    "logoUrl": "/images/logo-edutech.png",
     "imageUrl": "/images/case-study-6.jpg"
   }
 ]
