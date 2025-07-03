@@ -19,10 +19,24 @@ export const getBookingById = async (id) => {
 
 export const createBooking = async (bookingData) => {
   await delay(500)
+  
+  // Validate required fields
+  if (!bookingData.clientName || !bookingData.clientEmail || !bookingData.serviceId) {
+    throw new Error('Missing required booking information')
+  }
+  
+  // Generate sequential integer ID
+  const nextId = mockBookings.length > 0 
+    ? Math.max(...mockBookings.map(b => b.Id)) + 1 
+    : 1
+  
   const newBooking = {
     ...bookingData,
-    Id: mockBookings.length > 0 ? Math.max(...mockBookings.map(b => b.Id)) + 1 : 1
+    Id: nextId,
+    status: 'pending',
+    createdAt: new Date().toISOString()
   }
+  
   mockBookings.push(newBooking)
   return { ...newBooking }
 }
