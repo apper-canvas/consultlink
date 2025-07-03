@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "client": "TechCorp Solutions",
+    "industry": "Technology",
+    "challenge": "TechCorp was struggling with operational inefficiencies that were impacting their ability to scale. Their processes were largely manual, leading to errors, delays, and increased costs. The company needed to streamline operations while maintaining quality and preparing for rapid growth.",
+    "solution": "We conducted a comprehensive operational audit and implemented a phased transformation program. This included process automation, workflow optimization, staff training, and the introduction of performance monitoring systems. We also established clear KPIs and accountability frameworks.",
+    "results": [
+      "40% increase in operational efficiency",
+      "60% reduction in processing errors",
+      "25% cost savings in operations",
+      "50% faster project delivery times"
+    ],
+    "testimonial": "Consult Pro transformed our operations completely. The efficiency gains have been remarkable, and we're now ready for the growth we've been planning.",
+    "imageUrl": "/images/case-study-1.jpg"
+  },
+  {
+    "Id": 2,
+    "client": "Global Manufacturing Inc",
+    "industry": "Manufacturing",
+    "challenge": "Global Manufacturing was facing declining market share due to increased competition and changing customer demands. They needed to innovate their product lines and improve their go-to-market strategies while maintaining operational excellence.",
+    "solution": "Our team developed a comprehensive digital transformation strategy that included modernizing their production processes, implementing data analytics for market insights, and creating new customer engagement channels. We also facilitated innovation workshops and established agile development processes.",
+    "results": [
+      "30% increase in market share",
+      "45% improvement in product development speed",
+      "35% increase in customer satisfaction",
+      "$2M additional revenue in first year"
+    ],
+    "testimonial": "The digital transformation strategy helped us not just survive but thrive in a competitive market. We're now leading innovation in our industry.",
+    "imageUrl": "/images/case-study-2.jpg"
+  },
+  {
+    "Id": 3,
+    "client": "HealthFirst Medical",
+    "industry": "Healthcare",
+    "challenge": "HealthFirst Medical was experiencing challenges with patient flow, administrative overhead, and regulatory compliance. They needed to improve patient care quality while reducing operational costs and ensuring full compliance with healthcare regulations.",
+    "solution": "We implemented a comprehensive healthcare optimization program that included patient flow redesign, administrative process automation, staff training programs, and compliance management systems. We also introduced quality measurement frameworks and patient satisfaction monitoring.",
+    "results": [
+      "50% reduction in patient wait times",
+      "30% decrease in administrative costs",
+      "95% compliance score improvement",
+      "20% increase in patient satisfaction"
+    ],
+    "testimonial": "Our patient care has improved dramatically, and we're now fully compliant while operating more efficiently than ever before.",
+    "imageUrl": "/images/case-study-3.jpg"
+  },
+  {
+    "Id": 4,
+    "client": "RetailMax Chain",
+    "industry": "Retail",
+    "challenge": "RetailMax was losing customers to online competitors and needed to modernize their retail experience. They required an omnichannel strategy that would integrate their physical and digital presence while improving inventory management and customer service.",
+    "solution": "We developed and implemented an omnichannel retail strategy that included e-commerce platform integration, inventory management system upgrades, staff training for digital tools, and customer experience optimization across all touchpoints.",
+    "results": [
+      "65% increase in online sales",
+      "40% improvement in inventory turnover",
+      "25% increase in customer retention",
+      "55% growth in cross-channel sales"
+    ],
+    "testimonial": "The omnichannel approach has revolutionized our business. We're now competing effectively in the digital age while strengthening our physical presence.",
+    "imageUrl": "/images/case-study-4.jpg"
+  },
+  {
+    "Id": 5,
+    "client": "Financial Services Plus",
+    "industry": "Financial Services",
+    "challenge": "Financial Services Plus needed to modernize their service delivery while ensuring regulatory compliance and maintaining customer trust. They were facing pressure from fintech competitors and needed to digitize their services without compromising security.",
+    "solution": "Our team designed a comprehensive digital transformation program that included secure digital platform development, regulatory compliance frameworks, customer onboarding optimization, and staff training for new technologies. We also implemented advanced security measures and risk management systems.",
+    "results": [
+      "80% faster customer onboarding",
+      "45% reduction in operational costs",
+      "35% increase in customer acquisition",
+      "99.9% security compliance rate"
+    ],
+    "testimonial": "We successfully modernized our services while maintaining the highest security standards. Our customers love the new digital experience.",
+    "imageUrl": "/images/case-study-5.jpg"
+  },
+  {
+    "Id": 6,
+    "client": "EduTech Academy",
+    "industry": "Education",
+    "challenge": "EduTech Academy needed to rapidly transition to digital learning while maintaining educational quality. The pandemic had forced them to rethink their entire approach to education delivery and student engagement.",
+    "solution": "We developed a comprehensive digital education strategy that included learning management system implementation, teacher training programs, student engagement tools, and performance tracking systems. We also created hybrid learning models and parent communication platforms.",
+    "results": [
+      "90% successful transition to digital learning",
+      "35% increase in student engagement",
+      "50% improvement in learning outcomes",
+      "70% increase in parent satisfaction"
+    ],
+    "testimonial": "The digital transformation not only helped us through the crisis but actually improved our educational outcomes beyond what we achieved before.",
+    "imageUrl": "/images/case-study-6.jpg"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "title": "Strategic Planning",
+    "description": "Develop comprehensive strategic roadmaps that align your vision with actionable plans. We help you identify opportunities, assess risks, and create sustainable competitive advantages.",
+    "icon": "Target",
+    "benefits": [
+      "Clear vision and mission alignment",
+      "Market opportunity identification",
+      "Risk assessment and mitigation",
+      "Competitive advantage development",
+      "Stakeholder engagement strategies"
+    ],
+    "duration": "4-8 weeks",
+    "price": "Starting at $15,000"
+  },
+  {
+    "Id": 2,
+    "title": "Operational Excellence",
+    "description": "Optimize your operations for maximum efficiency and effectiveness. Our proven methodologies help streamline processes, reduce waste, and improve performance across all business functions.",
+    "icon": "Settings",
+    "benefits": [
+      "Process optimization and automation",
+      "Cost reduction initiatives",
+      "Quality improvement programs",
+      "Performance measurement systems",
+      "Change management support"
+    ],
+    "duration": "6-12 weeks",
+    "price": "Starting at $20,000"
+  },
+  {
+    "Id": 3,
+    "title": "Digital Transformation",
+    "description": "Navigate the digital landscape with confidence. We guide organizations through technology adoption, digital culture change, and innovation strategies that drive growth.",
+    "icon": "Zap",
+    "benefits": [
+      "Technology strategy development",
+      "Digital culture transformation",
+      "Innovation process design",
+      "Data analytics implementation",
+      "Customer experience enhancement"
+    ],
+    "duration": "8-16 weeks",
+    "price": "Starting at $25,000"
+  },
+  {
+    "Id": 4,
+    "title": "Financial Advisory",
+    "description": "Strengthen your financial foundation with expert guidance on planning, analysis, and optimization. From budgeting to investment strategies, we help secure your financial future.",
+    "icon": "DollarSign",
+    "benefits": [
+      "Financial planning and analysis",
+      "Budget optimization strategies",
+      "Investment advisory services",
+      "Risk management solutions",
+      "Performance monitoring systems"
+    ],
+    "duration": "4-10 weeks",
+    "price": "Starting at $12,000"
+  },
+  {
+    "Id": 5,
+    "title": "Change Management",
+    "description": "Lead successful organizational transformations with our proven change management methodologies. We help navigate transitions smoothly while maintaining productivity and morale.",
+    "icon": "RotateCcw",
+    "benefits": [
+      "Change readiness assessment",
+      "Communication strategy development",
+      "Leadership coaching and support",
+      "Employee engagement programs",
+      "Resistance management techniques"
+    ],
+    "duration": "6-14 weeks",
+    "price": "Starting at $18,000"
+  },
+  {
+    "Id": 6,
+    "title": "Market Analysis",
+    "description": "Gain deep insights into your market landscape with comprehensive analysis and research. We provide actionable intelligence to inform strategic decisions and identify growth opportunities.",
+    "icon": "TrendingUp",
+    "benefits": [
+      "Competitive landscape analysis",
+      "Market size and opportunity assessment",
+      "Customer behavior insights",
+      "Industry trend identification",
+      "Go-to-market strategy development"
+    ],
+    "duration": "3-6 weeks",
+    "price": "Starting at $10,000"
+  }
+]

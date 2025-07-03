@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Johnson",
+    "title": "Senior Strategy Consultant",
+    "bio": "Sarah brings over 15 years of experience in strategic planning and business transformation. She has helped Fortune 500 companies navigate complex market challenges and achieve sustainable growth.",
+    "specialties": ["Strategic Planning", "Market Analysis", "Business Transformation"],
+    "experience": 15,
+    "imageUrl": "/images/expert-1.jpg",
+    "linkedIn": "https://linkedin.com/in/sarahjohnson"
+  },
+  {
+    "Id": 2,
+    "name": "Michael Chen",
+    "title": "Digital Transformation Lead",
+    "bio": "Michael specializes in helping organizations embrace digital technologies and transform their operations. His expertise spans across technology implementation, process optimization, and change management.",
+    "specialties": ["Digital Transformation", "Technology Strategy", "Process Optimization"],
+    "experience": 12,
+    "imageUrl": "/images/expert-2.jpg",
+    "linkedIn": "https://linkedin.com/in/michaelchen"
+  },
+  {
+    "Id": 3,
+    "name": "Emily Rodriguez",
+    "title": "Operations Excellence Director",
+    "bio": "Emily is passionate about operational efficiency and has a proven track record of streamlining processes and improving performance across various industries.",
+    "specialties": ["Operational Excellence", "Process Improvement", "Quality Management"],
+    "experience": 18,
+    "imageUrl": "/images/expert-3.jpg",
+    "linkedIn": "https://linkedin.com/in/emilyrodriguez"
+  },
+  {
+    "Id": 4,
+    "name": "David Thompson",
+    "title": "Financial Advisory Partner",
+    "bio": "David provides expert financial guidance to help organizations optimize their financial performance and make informed investment decisions. His background includes both corporate finance and investment banking.",
+    "specialties": ["Financial Planning", "Investment Strategy", "Risk Management"],
+    "experience": 20,
+    "imageUrl": "/images/expert-4.jpg",
+    "linkedIn": "https://linkedin.com/in/davidthompson"
+  },
+  {
+    "Id": 5,
+    "name": "Lisa Park",
+    "title": "Change Management Specialist",
+    "bio": "Lisa excels at guiding organizations through transitions and transformations. She combines psychology insights with business acumen to ensure successful change implementation.",
+    "specialties": ["Change Management", "Leadership Development", "Organizational Culture"],
+    "experience": 14,
+    "imageUrl": "/images/expert-5.jpg",
+    "linkedIn": "https://linkedin.com/in/lisapark"
+  },
+  {
+    "Id": 6,
+    "name": "Robert Kim",
+    "title": "Industry Research Analyst",
+    "bio": "Robert provides deep market insights and competitive intelligence to help businesses make informed strategic decisions. His analytical approach has helped numerous companies identify new opportunities.",
+    "specialties": ["Market Research", "Competitive Analysis", "Industry Trends"],
+    "experience": 11,
+    "imageUrl": "/images/expert-6.jpg",
+    "linkedIn": "https://linkedin.com/in/robertkim"
+  }
+]
